@@ -1,21 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  background-color: #ddd;
 }
-.about-us{
+
+/* Common styles for all screen sizes */
+.about-us {
   height: 100vh;
   width: 100%;
   padding: 90px 0;
   background: #ddd;
 }
-.pic{
+
+.pic {
   height: auto;
-  width:  302px;
+  width: 302px;
 }
-.about{
+
+.about {
   width: 1130px;
   max-width: 85%;
   margin: 0 auto;
@@ -23,32 +29,38 @@
   align-items: center;
   justify-content: space-around;
 }
-.text{
+
+.text {
   width: 540px;
 }
-.text h2{
+
+.text h2 {
   font-size: 90px;
   font-weight: 600;
   margin-bottom: 10px;
-
 }
-.text h5{
+
+.text h5 {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
 }
-span{
+
+span {
   color: #4070f4;
 }
-.text p{
+
+.text p {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 1px;
 }
-.data{
+
+.data {
   margin-top: 30px;
 }
-.hire{
+
+.hire {
   font-size: 18px;
   background: #4070f4;
   color: #fff;
@@ -58,27 +70,50 @@ span{
   border-radius: 6px;
   transition: 0.5s;
 }
-.hire:hover{
+
+.hire:hover {
   background: #000;
   border: 1px solid #4070f4;
 }
+
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ddd;
+}
+
+.alam1,
+.alam2 {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.alam1:hover,
+.alam2:hover {
+  color: #4070f4;
+}
+
+/* Media Queries for Mobile and Tablet Screens */
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for screens smaller than or equal to 768px (tablets and mobiles) */
+
+  .about {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center align the content */
   }
-  
-  .alam1, .alam2 {
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-    margin-right: 20px;
-    transition: color 0.3s ease;
+
+  .text {
+    width: 100%; /* Full width for text on smaller screens */
+    margin-top: 20px; /* Adjust spacing */
   }
-  
-  .alam1:hover, .alam2:hover {
-    color: #4070f4;
+
+  .text h2 {
+    font-size: 50px; /* Adjust font size for smaller screens */
   }
-  
+}
